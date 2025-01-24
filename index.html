@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png">
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/scss/styles.css">
+
+        <title>Live Battery Percentage Indicator</title>
+    </head>
+    <body>
+        <h1 id="header1">the battery blast prediction indicator</h1>
+
+        <h1 id="header1">Stay safe! Monitor your battery to avoid unexpected shutdowns.</h1>
+       
+        <!--=============== DARK THEME BUTTON ===============-->
+        <div class="dark-theme-button">
+            <div class="dark-theme-button__icon">
+                <i class="icon ri-sun-line"></i>
+            </div>
+        </div>
+
+        <!--=============== BATTERY ===============-->
+        <section class="battery">
+            <div class="battery__container">
+                <!-- Text on the left -->
+                <div class="battery__info">
+                    <p class="battery__description">
+                        Battery operating within safe limits.
+                    </p>
+                </div>
+        
+                <!-- Battery indicator -->
+                <div class="battery__card">
+                    <div class="battery__data">
+                        <p class="battery__text">Blast prediction %</p>
+                        <h1 class="battery__percentage">
+                            91%
+                        </h1>
+        
+                        <p class="battery__status">
+                            Low battery <i class="ri-plug-line"></i>
+                        </p>
+                    </div>
+        
+                    <div class="battery__pill">
+                        <div class="battery__level">
+                            <div class="battery__liquid"></div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="battery__indicator" id="statusIndicator"></div>
+            </div>
+        </section>
+        
+        
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
